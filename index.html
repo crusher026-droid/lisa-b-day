@@ -224,6 +224,9 @@ header{text-align:center;padding:4rem 1rem 2rem}
 .contract.canceled{position:relative}
 .contract.canceled::before{content:'АННУЛИРОВАНО';position:absolute;left:6%;right:6%;top:44%;text-align:center;font-family:'Cinzel','Cormorant Unicase',serif;font-size:1.1rem;letter-spacing:.3em;color:rgba(139,32,32,.6);border:3px solid rgba(139,32,32,.45);padding:.5rem;transform:rotate(-7deg);pointer-events:none;z-index:6}
 
+
+.vfb{margin-top:.7rem;font-family:'IM Fell English','EB Garamond',serif;font-style:italic;font-size:.78rem;color:#7a6a5a;text-align:center}
+.vfb a{color:#b8963e}
 @media(max-width:700px){.wishes{grid-template-columns:1fr}.sigrow{flex-direction:column;align-items:stretch}.seal{margin:0 auto}.grimoire,.contract{padding:1.5rem 1.2rem}.item{width:56px;height:72px}.item svg{height:52px}.tray{gap:14px}}
 </style>
 </head>
@@ -334,7 +337,7 @@ header{text-align:center;padding:4rem 1rem 2rem}
     <div class="sec-step"><span>Шаг IV</span> Явление</div>
     <div class="sec-title">Послание из Ада</div>
     <button class="summon" id="summon" type="button">Появись, демон</button>
-    <div class="vf" id="vf"><div class="vi"><video id="video" controls playsinline><source src="message.mp4" type="video/mp4"></video><div class="vp" id="vp">Послание загружается...</div></div></div>
+    <div class="vf" id="vf"><div class="vi"><video id="video" controls playsinline preload="metadata" poster="poster.jpg"><source src="message.mp4" type="video/mp4"></video><div class="vp" id="vp">Нажмите ▶, чтобы услышать послание</div></div><div class="vfb">Если видео не открывается — <a href="message.mp4" target="_blank" rel="noopener">смотреть отдельно</a></div></div>
   </section>
 </div>
 
